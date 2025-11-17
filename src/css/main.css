@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+body {
+  background-image: url("../img/backgroundtexture.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.navigationleft {
+  height: 100vh;
+  position: fixed;
+  padding: 12px;
+}
+
+html {
+  cursor: url("../img/1x/Fichier\ 1.png"), auto;
+}
