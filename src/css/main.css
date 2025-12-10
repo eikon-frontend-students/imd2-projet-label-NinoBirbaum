@@ -35,6 +35,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  cursor: none;
 }
 
 img,
@@ -221,5 +222,23 @@ h3 {
   align-items: end;
 }
 html {
-  cursor: url("/src/img/1x/cursorimage.png");
+  cursor: none;
+}
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+.custom-cursor.scale-up {
+  transform: scale(5);
+  transition: transform 0.3s ease;
 }
