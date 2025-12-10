@@ -202,7 +202,6 @@ h3 {
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
-  scroll-snap-type: x;
 }
 .boutoncards {
   font-family: "Spezia VF TEST FONT WIDE SEMI BOLD";
