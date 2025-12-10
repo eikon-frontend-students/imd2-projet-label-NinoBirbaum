@@ -18,7 +18,7 @@ links.forEach((link) => {
 
       setTimeout(() => {
         isAnimating = false;
-      }, 800);
+      }, 600);
     }
   });
 

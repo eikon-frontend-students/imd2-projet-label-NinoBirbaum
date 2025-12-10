@@ -63,9 +63,7 @@ body {
   padding: 12px;
   grid-area: nav;
 }
-html {
-  cursor: url("../img/1x/Fichier\ 1.png");
-}
+
 .bannerrolling {
   background-color: rgb(255, 255, 255);
   margin-top: 20px;
@@ -221,4 +219,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
+}
+html {
+  cursor: url("/src/img/1x/cursorimage.png");
 }
