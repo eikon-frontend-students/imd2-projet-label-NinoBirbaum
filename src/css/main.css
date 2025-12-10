@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Impact";
+  src: url("/src/font/Impact.woff2");
+}
+@font-face {
+  font-family: "BASQUIAT";
+  src: url("/src/font/BASQUIAT.woff2");
+}
+@font-face {
+  font-family: "Spezia VF TEST FONT WIDE SEMI BOLD";
+  src: url("/src/font/SpeziaWideTESTFONT-SemiBold.woff2");
+}
+@font-face {
+  font-family: "Spezia VF TEST FONT EXTENDED SEMI BOLD";
+  src: url("/src/font/SpeziaExtended_TEST-FONT_SemiBold.woff2");
+}
+@font-face {
+  font-family: "Spezia VF TEST FONT EXTENDED BOLD";
+  src: url("/src/font/SpeziaExtended_TEST-FONT_Bold.woff2");
+}
+@font-face {
+  font-family: "Spezia VF TEST FONT MEDIUM";
+  src: url("/src/font/Spezia_TEST-FONT_Medium.woff2");
+}
+@font-face {
+  font-family: "Spezia VF TEST FONT CONDENSED REGULAR";
+  src: url("/src/font/SpeziaCondensed_TEST-FONT_Regular.woff2");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -104,7 +132,7 @@ header {
   align-items: center;
   gap: 10px;
   color: #fff;
-  font-family: "Spezia VF TEST FONT";
+  font-family: "Spezia VF TEST FONT WIDE SEMI BOLD";
   font-size: 10px;
   font-weight: 648;
   text-transform: uppercase;
@@ -119,7 +147,7 @@ h2 {
 }
 .scrolltext {
   color: #fff;
-  font-family: "Spezia VF TEST FONT";
+  font-family: "Spezia VF TEST FONT EXTENDED SEMI BOLD";
   font-size: 12px;
   font-weight: 648;
   display: flex;
@@ -139,7 +167,6 @@ main {
   display: flex;
   color: #0c0c0c;
   text-align: right;
-  font-family: "Spezia VF TEST FONT";
   background-color: #fff;
   min-width: 313px;
   height: 164px;
@@ -154,6 +181,7 @@ main {
   gap: 12px;
 }
 h3 {
+  font-family: "Spezia VF TEST FONT EXTENDED BOLD";
   font-size: 16px;
   font-weight: 814;
 }
@@ -162,9 +190,11 @@ h3 {
 }
 .artisteslieuxtext {
   font-weight: 510;
+  font-family: "Spezia VF TEST FONT MEDIUM";
 }
 .datesregionstext {
   font-weight: 327;
+  font-family: "Spezia VF TEST FONT CONDENSED REGULAR";
 }
 .cardssection {
   display: flex;
@@ -175,6 +205,7 @@ h3 {
   scroll-snap-type: x;
 }
 .boutoncards {
+  font-family: "Spezia VF TEST FONT WIDE SEMI BOLD";
   color: #fff;
   font-size: 10px;
   font-weight: 648;
@@ -190,7 +221,5 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.x.mandatory-scroll-snapping {
-  scroll-snap-type: x mandatory;
+  align-items: end;
 }
