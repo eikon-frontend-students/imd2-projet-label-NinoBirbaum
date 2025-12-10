@@ -6,24 +6,191 @@
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
 video {
   display: block;
+  max-width: 100%;
 }
 
 body {
   background-image: url("../img/backgroundtexture.jpg");
   background-size: cover;
-  min-height: 100vh;
-}
-.navigationleft {
-  height: 100vh;
-  position: fixed;
-  padding: 12px;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 38px;
+  grid-template-areas:
+    "nav main main "
+    "nav main main "
+    "nav main main ";
+  max-width: 100vw;
+  overflow: hidden;
 }
 
+.navigationleft {
+  height: 100vh;
+  padding: 12px;
+  grid-area: nav;
+}
 html {
-  cursor: url("../img/1x/Fichier\ 1.png"), auto;
+  cursor: url("../img/1x/Fichier\ 1.png");
+}
+.bannerrolling {
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rollingtext {
+  display: flex;
+  animation: slide-left 20s linear infinite;
+  gap: 18px;
+}
+
+@keyframes slide-left {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.rollingparagraphe {
+  color: #0c0c0c;
+  font-family: Impact;
+  font-size: 58px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.rightcoontainer {
+  grid-area: main;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin-right: 38px;
+  margin-top: 38px;
+}
+.textheader {
+  margin-top: 24px;
+  color: #fff;
+  font-family: BASQUIAT;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  width: 75%;
+}
+.buttonheader {
+  border-radius: 5.662px;
+  border: 0.5px solid #fff;
+  display: inline-flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: "Spezia VF TEST FONT";
+  font-size: 10px;
+  font-weight: 648;
+  text-transform: uppercase;
+  margin-top: 20px;
+  backdrop-filter: blur(1px);
+}
+h2 {
+  color: #fff;
+  font-family: Impact;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.scrolltext {
+  color: #fff;
+  font-family: "Spezia VF TEST FONT";
+  font-size: 12px;
+  font-weight: 648;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.suggestionline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 38px;
+}
+main {
+  margin-bottom: 20px;
+}
+.suggestioncards {
+  display: flex;
+  color: #0c0c0c;
+  text-align: right;
+  font-family: "Spezia VF TEST FONT";
+  background-color: #fff;
+  min-width: 313px;
+  height: 164px;
+  border-radius: 12px;
+  padding: 12px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.cardstext {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 814;
+}
+.petittextcards {
+  font-size: 16px;
+}
+.artisteslieuxtext {
+  font-weight: 510;
+}
+.datesregionstext {
+  font-weight: 327;
+}
+.cardssection {
+  display: flex;
+  gap: 38px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  scroll-snap-type: x;
+}
+.boutoncards {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 648;
+  text-transform: uppercase;
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #0c0c0c;
+}
+.rightsectioncards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
 }
