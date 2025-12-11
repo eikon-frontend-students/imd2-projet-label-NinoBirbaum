@@ -240,5 +240,5 @@ html {
 
 .custom-cursor.scale-up {
   transform: scale(2);
-  transition: transform 0.1s ease;
+  transition: transform 0.2s ease;
 }
