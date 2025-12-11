@@ -113,8 +113,18 @@ header {
   margin-right: 38px;
   margin-top: 38px;
 }
+
+.header-artistes-page {
+  display: flex;
+  gap: 38px;
+}
+
+.photo-profil {
+  width: 197px;
+  height: 197px;
+}
+
 .textheader {
-  margin-top: 24px;
   color: #fff;
   font-family: BASQUIAT;
   font-size: 24px;
@@ -122,6 +132,11 @@ header {
   text-transform: uppercase;
   width: 75%;
 }
+
+.text-header-home-page {
+  margin-top: 24px;
+}
+
 .buttonheader {
   border-radius: 5.662px;
   border: 0.5px solid #fff;
@@ -138,12 +153,14 @@ header {
   margin-top: 20px;
   backdrop-filter: blur(1px);
 }
+
 h2 {
   color: #fff;
   font-family: Impact;
   font-size: 24px;
   text-transform: uppercase;
 }
+
 .scrolltext {
   color: #fff;
   font-family: "Spezia VF TEST FONT EXTENDED SEMI BOLD";
@@ -153,6 +170,7 @@ h2 {
   align-items: center;
   gap: 8px;
 }
+
 .suggestionline {
   display: flex;
   justify-content: space-between;
@@ -162,6 +180,7 @@ h2 {
 main {
   margin-bottom: 20px;
 }
+
 .suggestioncards {
   display: flex;
   color: #0c0c0c;
@@ -174,27 +193,33 @@ main {
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .cardstext {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 h3 {
   font-family: "Spezia VF TEST FONT EXTENDED BOLD";
   font-size: 16px;
   font-weight: 814;
 }
+
 .petittextcards {
   font-size: 16px;
 }
+
 .artisteslieuxtext {
   font-weight: 510;
   font-family: "Spezia VF TEST FONT MEDIUM";
 }
+
 .datesregionstext {
   font-weight: 327;
   font-family: "Spezia VF TEST FONT CONDENSED REGULAR";
 }
+
 .cardssection {
   display: flex;
   gap: 38px;
@@ -202,6 +227,7 @@ h3 {
   overflow-y: hidden;
   scrollbar-width: none;
 }
+
 .boutoncards {
   font-family: "Spezia VF TEST FONT WIDE SEMI BOLD";
   color: #fff;
@@ -215,15 +241,18 @@ h3 {
   border-radius: 12px;
   background: #0c0c0c;
 }
+
 .rightsectioncards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
 }
+
 html {
   cursor: none;
 }
+
 .custom-cursor {
   position: fixed;
   top: 0;
@@ -241,4 +270,8 @@ html {
 .custom-cursor.scale-up {
   transform: scale(2);
   transition: transform 0.2s ease;
+}
+
+.event-section {
+  margin-bottom: 38px;
 }

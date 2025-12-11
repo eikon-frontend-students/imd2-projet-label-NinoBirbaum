@@ -35,26 +35,23 @@
             <p class="rollingparagraphe">TEKSA</p>
           </section>
         </div>
-        <header>
-          <div class="imageheaderplustext">
-            <img
-              src="/src/img/photoheaderbsp.png"
-              alt="photo de teuf avec text free tekno for free people"
-            />
+        <header class="header-artistes-page">
+          <div class="photo-profil">
+            <img src="/src/img/teksa_PP.png" alt="photo de Teksa" />
           </div>
           <p class="textheader">
-            Né au milieu des années 2000 dans le sud de la France, Bass Addict
-            Records défend la culture freetekno. Entre tribe, acid, hardtek et
-            mental, le label réunit les artistes qui font vibrer la scène
-            underground européenne...
+            Originaire de Bordeaux, Teksa forge une tekno brute et immersive,
+            nourrie par la culture des free parties. Un son à la croisée de la
+            tribe, de la hardtek et de l’acid, des basses profondes, textures
+            acides et tension hypnotique, il impose un son pensé pour le
+            mouvement et la liberté.
           </p>
-          <a class="buttonheader" href="">en savoir plus</a>
         </header>
       </div>
 
       <main>
         <div class="suggestionline">
-          <h2>Suggestions</h2>
+          <h2>prochain concerts</h2>
           <div class="scrolltext">
             <p>scroll</p>
             <svg
@@ -71,7 +68,31 @@
             </svg>
           </div>
         </div>
-        <include src="./components/sectioncardssugestions.html"></include>
+
+        <include
+          class="event-section"
+          src="./components/sectioncardsdécouvrirartiste.html"
+        ></include>
+        <div class="suggestionline">
+          <h2>Découvre l’artiste</h2>
+          <div class="scrolltext">
+            <p>scroll</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="9"
+              viewBox="0 0 17 9"
+              fill="none"
+            >
+              <path
+                d="M0.177083 3.91119C0.0590275 4.01331 0 4.15373 0 4.33245C0 4.51117 0.0664055 4.65798 0.199219 4.77287C0.332032 4.88776 0.501735 4.94521 0.708333 4.94521H14.5651L11.5547 7.5877C11.2005 7.86855 11.1931 8.15577 11.5326 8.44938C11.872 8.743 12.204 8.73661 12.5286 8.43024L16.7786 4.75372C16.8672 4.70266 16.9262 4.63883 16.9557 4.56224C16.9852 4.48564 17 4.40905 17 4.33245C17 4.25586 16.9852 4.17927 16.9557 4.10267C16.9262 4.02608 16.8672 3.96225 16.7786 3.91119L12.5286 0.234673C12.204 -0.0717054 11.872 -0.0780885 11.5326 0.215524C11.1931 0.509136 11.2005 0.796361 11.5547 1.07721L14.5651 3.7197H0.708333C0.501735 3.7197 0.324653 3.78353 0.177083 3.91119Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <include src="./components/sectioncardsdécouvrirartiste.html"></include>
       </main>
     </div>
   </body>
