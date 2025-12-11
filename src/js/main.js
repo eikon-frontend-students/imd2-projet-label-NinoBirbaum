@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cursor.style.top = e.clientY + "px";
   });
   ///.cardscta chamger sur élément qui grandissent
-  var linkElements = document.querySelectorAll(".link, .cards-cta");
+  var linkElements = document.querySelectorAll(".link, .cursor-scale");
   linkElements.forEach(function (element) {
     element.addEventListener("mouseenter", function () {
       cursor.classList.add("scale-up");

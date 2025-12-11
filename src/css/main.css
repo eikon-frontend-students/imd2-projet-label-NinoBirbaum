@@ -228,8 +228,8 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: white;
   mix-blend-mode: difference;
@@ -239,6 +239,6 @@ html {
 }
 
 .custom-cursor.scale-up {
-  transform: scale(5);
-  transition: transform 0.3s ease;
+  transform: scale(2);
+  transition: transform 0.1s ease;
 }
