@@ -134,11 +134,11 @@ header {
   font-size: 24px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  width: 75%;
 }
 
 .text-header-home-page {
   margin-top: 24px;
+  width: 75%;
 }
 
 .buttonheader {
@@ -285,6 +285,7 @@ html {
   font-family: "Spezia VF TEST FONT EXTENDED REGULAR";
   font-size: 12px;
   font-weight: 327;
+  transition: color 0.2s ease;
 }
 
 .artist-link-line {
@@ -302,4 +303,10 @@ html {
   flex-direction: column;
   gap: 4px;
   width: 80px;
+}
+
+.right-section-header-artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
