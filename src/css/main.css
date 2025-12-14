@@ -26,6 +26,10 @@
   font-family: "Spezia VF TEST FONT CONDENSED REGULAR";
   src: url("/src/font/SpeziaCondensed_TEST-FONT_Regular.woff2");
 }
+@font-face {
+  font-family: "Spezia VF TEST FONT EXTENDED REGULAR";
+  src: url("/src/font/SpeziaExtendedTESTFONT-Regular.woff2");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -181,13 +185,13 @@ main {
   margin-bottom: 20px;
 }
 
-.suggestioncards {
+.all-cards {
   display: flex;
   color: #0c0c0c;
   text-align: right;
   background-color: #fff;
-  min-width: 313px;
-  height: 164px;
+  min-width: 305px;
+  height: 155;
   border-radius: 12px;
   padding: 12px;
   justify-content: space-between;
@@ -274,4 +278,28 @@ html {
 
 .event-section {
   margin-bottom: 38px;
+}
+
+.text-artist-link {
+  color: #ffffff00;
+  font-family: "Spezia VF TEST FONT EXTENDED REGULAR";
+  font-size: 12px;
+  font-weight: 327;
+}
+
+.artist-link-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.artist-link-line:hover .text-artist-link {
+  color: #ffffff;
+}
+
+.artist-link-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 80px;
 }
