@@ -59,3 +59,17 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("active");
   mobileNav.classList.toggle("active");
 });
+
+window.addEventListener("load", () => {
+  const sections = document.querySelectorAll(".cardssection");
+
+  sections.forEach((section) => {
+    section.addEventListener(
+      "scroll",
+      () => {
+        section.classList.add("hide-fade");
+      },
+      { once: true } // 🔥 disparaît dès le premier scroll
+    );
+  });
+});
