@@ -349,7 +349,48 @@ html {
     display: block;
   }
   body {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+    grid-template-areas:
+      "nav nav nav "
+      "main main main"
+      "main main main";
+    overflow: scroll;
   }
+  header {
+    margin: 16px 16px 0px 16px;
+  }
+  .suggestionline {
+    padding: 0px 16px;
+  }
+  .cardssection {
+    gap: 16px;
+    margin-left: 16px;
+  }
+  .event-section {
+    margin-bottom: 16px;
+  }
+  .header-artistes-page {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .textheader {
+    font-size: 22px;
+  }
+  .rightcoontainer {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-artistes-page {
+    flex-direction: column;
+  }
+  .textheader {
+    font-size: 20px;
+  }
+}
+
+::selection {
+  background-color: #e2432e;
 }
